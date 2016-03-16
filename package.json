@@ -1,0 +1,12 @@
+{
+  "name": "dodo-starterkit",
+  "version": "0.0.1",
+  "description": "Dodo.js project initialiser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Create ci configuration to run tests for every project tempalate! \" && exit 1",
+    "install": "sh copy-template-project.sh"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "based-on-dodo-es5-template-changeme",
+  "description": "Dodo.js es5 starter pack!",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Your Name",
+    "email": "your.name@invalid.com"
+  },
+  "dependencies": {
+    "expect.js": "0.3.1",
+    "gulp": "~3.8.6",
+    "gulp-jshint": "~1.10.0",
+    "gulp-util": "~3.0.0",
+    "gulp-watch": "~4.2.4",
+    "jshint-stylish": "~1.0.2",
+    "parse-database-url": "~0.2.0",
+    "bluebird": "2.9.25",
+    "lodash": "^3.6.0",
+    "minimist": "1.1.1",
+    "mocha": "2.2.4",
+    "moment": "2.10.2",
+    "dodo": ">=0.0.3",
+    "dodo-core-features": ">=0.0.3"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": "0.12.x"
+  }
+}
