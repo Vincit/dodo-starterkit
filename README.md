@@ -6,16 +6,16 @@ package so you can put your initial project to version control.
 
 ## ES6 template (default) (not implemented yet)
 
-    npm install dodo-starterkit
+    INSTALL_PATH=$PWD npm install dodo-starterkit
 
 ## ES5 template
 
-    npm install dodo-starterkit -- es5
+    INSTALL_PATH=$PWD TEMPLATE=es5 npm install dodo-starterkit
 
 ## Template with Babel build system (not implemented yet)
 
-    npm install dodo-starterkit -- babel
+    INSTALL_PATH=$PWD TEMPLATE=babel npm install dodo-starterkit
 
 ## Typescript template (not implemented yet)
 
-    npm install dodo-starterkit -- ts
+    INSTALL_PATH=$PWD TEMPLATE=ts npm install dodo-starterkit

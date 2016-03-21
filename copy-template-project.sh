@@ -1,5 +1,4 @@
-# TODO: read wanted template from commandline agruments... e.g.'npm install dodo-starterkit -- ts'
-# TODO: check that arg is one of ['es5, 'es6', 'ts']
+#!/usr/bin/env bash
 
 if [ ! "${INSTALL_PATH:0:1}" = "/" ]; then
   echo "INSTALL_PATH found but it is not absolute.."
@@ -21,7 +20,9 @@ if [ ! $(ls -1 ${INSTALL_PATH} | grep -v -E "(node_modules|npm-debug.log)" | wc 
   exit 1;
 fi
 
-cp -r es5-template/.??* es5-template/* ${INSTALL_PATH:?"Absolute path to INSTALL_PATH must be given. e.g. \"INSTALL_PATH=\$PWD npm install dodo-starterkit\" More info: https://github.com/Vincit/dodo.js/issues/16"}
+TEMPLATE_DIR=${TEMPLATE:=es6}-template
+echo "Copying template from ${TEMPLATE_DIR}\n"
+cp -r ${TEMPLATE_DIR}/.??* ${TEMPLATE_DIR}/* ${INSTALL_PATH:?"Absolute path to INSTALL_PATH must be given. e.g. \"INSTALL_PATH=\$PWD npm install dodo-starterkit\" More info: https://github.com/Vincit/dodo.js/issues/16"}
 rm -fr ../dodo-starterkit
 # move npm ignore back to gitignore (npm automatically renames it...)
 mv ../../.npmignore ../../.gitignore
