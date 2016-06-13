@@ -4,7 +4,7 @@ This package just copies new project template to the directory where
 `npm install dodo-starterkit` is ran. Then it removes all traces of installer
 package so you can put your initial project to version control.
 
-## ES6 template (default) (not implemented yet)
+## ES6 template (default)
 
     INSTALL_PATH=$PWD npm install dodo-starterkit
 
