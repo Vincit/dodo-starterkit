@@ -14,7 +14,8 @@ module.exports = {
   // The directories from which to search for the features...
   // TODO: nicer syntax here...
   featurePaths: [
-    path.join(frameworkRootDir, 'node_modules/dodo-core-features')
+    path.join(frameworkRootDir, 'node_modules/dodo-core-features'),
+    path.join(__dirname, '..', 'features')
   ],
 
   // The features to enable for the service. See dodo-core-features for documentation.
@@ -24,6 +25,13 @@ module.exports = {
       config: {
         unauthenticatedStatusCode: 202
       }
+    }, {
+      feature: 'error-handler',
+      config: {
+        handlers: ['http']
+      }
+    }, {
+      feature: 'test-runner'
     }
   ]
 };
