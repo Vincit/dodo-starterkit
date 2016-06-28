@@ -13,6 +13,7 @@
     "gulp-jshint": "~1.10.0",
     "gulp-util": "~3.0.0",
     "gulp-watch": "~4.2.4",
+    "istanbul": "^0.4.4",
     "jshint-stylish": "~1.0.2",
     "parse-database-url": "~0.2.0",
     "bluebird": "2.9.25",
