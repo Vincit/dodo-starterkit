@@ -1,5 +1,7 @@
 # Dodo.js project template installer
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Vincit/dodo-starterkit.svg)](https://greenkeeper.io/)
+
 This package just copies new project template to the directory where
 `npm install dodo-starterkit` is ran. Then it removes all traces of installer
 package so you can put your initial project to version control.
